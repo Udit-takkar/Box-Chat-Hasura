@@ -20,7 +20,9 @@
   
   <p align="center">Realtime Group Messaging Web Application</p>
   
-<img width="1440" alt="Screenshot 2021-10-06 at 12 14 57 PM" src="https://user-images.githubusercontent.com/53316345/136153415-5a345b4e-3604-407c-ac72-8ed5b5859eae.png">
+
+
+<img width="1440" alt="Screenshot 2022-03-31 at 12 02 47 AM" src="https://user-images.githubusercontent.com/53316345/160906492-aa6475f1-5b6c-4756-9842-098defd07718.png">
 
 
 ## ✨ Features
