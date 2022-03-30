@@ -12,7 +12,6 @@
    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/UditCodes?style=social" />  
   </p>
     <p align="center">
-    <a href="http://box-chat.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/Udit-takkar/Box-Chat/issues">Report Bug</a>
     ·
@@ -25,6 +24,8 @@
 
 
 ## ✨ Features
+
+- Connect meta mask wallet to add hexagon-shaped NFT profile pictures. (currently loads NFTs from mumbai testnet)
 - Authentication with Auth0
 - Infinte Lazy Loading of Messages in Rooms using Intersection Observer
 - Create your own Chat Rooms
@@ -32,6 +33,7 @@
 - Update your profile picture and username
 - Accept or Reject Chat Room Invitation
 - Send and Recieve  Messages in Realtime using graphQL subscriptions
+- Voice rooms & Listen music with friends ( Coming Soon ...)
 
 
 ## Tech Stack & Tools
@@ -44,6 +46,10 @@
  - Auth0 
  - PostgresQL
  - Backend Serverless functions on [Glitch](https://glitch.com/)
+ - Moralis
+ - 100ms
+ - Formik and Yup
+ - Eslint and Prettier
 
 ## :rocket: Local Development
 
@@ -52,7 +58,7 @@
 clone this repo
 
 ```sh
-https://github.com/Udit-takkar/Box-Chat.git
+https://github.com/Udit-takkar/Box-Chat-Hasura.git
 ```
 
 #### Step-2
@@ -61,10 +67,21 @@ Install all dependencies
 
 ```sh
 cd client
-npm install
+yarn install
 ```
 
 #### Step-3
+Create .env file in client
+
+```sh
+REACT_APP_X_HASURA_ADMIN_SECRET=
+REACT_APP_DEVELOPMENT_ENV=development
+REACT_APP_MORALIS_APPLICATION_ID=
+REACT_APP_MORALIS_SERVER_URL=
+```
+
+
+#### Step-4
 
 ```sh
 npm start
