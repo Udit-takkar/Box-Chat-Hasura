@@ -1,0 +1,18 @@
+# Under Development
+overwrite: true
+require:
+  - ts-node/register
+generates:
+  ./src/graphql/autogen/types.tsx:
+    schema: schema.json
+
+    documents:
+      - ./src/graphql/**/(!(*.d)).ts
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - add:
+          content: "/* eslint-disable */"
+    config:
+      withHooks: true
