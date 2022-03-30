@@ -24,16 +24,17 @@ const Login: React.FC = () => {
           </h1>
           <button
             onClick={handleLogin}
-            className="login-btn text-2xl bg-transparent hover:bg-btn text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded ml-10 mt-5  "
+            className="login-btn text-xl bg-transparent hover:bg-btn text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent  ml-10 mt-5 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 rounded-lg border-none "
           >
             Login / Signup Now
           </button>
+
           <button
             onClick={() =>
               (window.location.href =
                 "https://github.com/Udit-takkar/Box-Chat-Hasura")
             }
-            className="login-btn text-2xl bg-transparent hover:bg-btn text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded ml-10 mt-5  "
+            className="login-btn text-xl bg-transparent hover:bg-btn text-white  hover:text-white py-2 px-4 border border-white hover:border-transparent  ml-10 mt-5  bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg border-none"
           >
             View On Github
           </button>
@@ -46,7 +47,11 @@ const Login: React.FC = () => {
           threshold={[1]}
         >
           {(src: string) => (
-            <img src={src} className="h-4/5 w-auto" alt="an alternative text" />
+            <img
+              src={src}
+              className="h-4/5 w-auto mr-12"
+              alt="an alternative text"
+            />
           )}
         </ProgressiveImage>
       </div>

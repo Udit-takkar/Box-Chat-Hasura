@@ -17,28 +17,28 @@ const sampleEvents = [
       "bg-gradient-to-r mr-5 mb-5 w-300 h-200 from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center",
   },
   {
-    name: "Handloom Bag",
+    name: "Bille Eilish",
     location: "Bihar",
     time: "March 24th at 05:00 PM",
     class:
       "bg-gradient-to-r mr-5 mb-5 w-300 h-200 from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center",
   },
   {
-    name: "Home decor",
+    name: "Hip hop",
     location: "Block 1",
     time: "March 24th at 10:00 AM",
     class:
       "bg-gradient-to-r mr-5 mb-5 w-300 h-200 from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center",
   },
   {
-    name: "Kitchen Ware",
+    name: "React v18",
     location: "Block 1",
     time: "March 24th at 10:00 AM",
     class:
       "bg-gradient-to-r mr-5 mb-5 w-300 h-200 from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center",
   },
   {
-    name: "Bamboo",
+    name: "Movies",
     location: "Block 1",
     time: "March 24th at 10:00 AM",
     class:
@@ -58,12 +58,12 @@ function Rooms() {
             src="https://iframe.videodelivery.net/482971ffc3e00bbfae8192a3753bcf28?muted=true&preload=auto&loop=true&autoplay=true&controls=false"
           />
           <div className=" bg-opacity-50 flex items-center h-full">
-            <div className="px-10 max-w-xl">
+            <div className="px-10 max-w-2xl">
               <h2 className="text-3xl text-white font-bold">
-                Chat
+                Chat, Listen music
+                <span> </span>
                 <span style={{ color: "rgb(20, 110, 180)" }}>
-                  {" "}
-                  ,Audio Rooms
+                  and join Audio Rooms
                 </span>
               </h2>
               <h2 className="text-2xl text-white font-semibold mt-4">
@@ -101,9 +101,9 @@ function Rooms() {
                   </div>
                 </div>
                 <div className="text-white text-left mt-10">
-                  <h3 className="text-md font-thin">{event.time}</h3>
+                  <h3 className="text-md font">{event.time}</h3>
                   <h2 className="text-2xl">{event.name}</h2>
-                  <h3 className="text-lg font-thin">{event.location}</h3>
+                  {/* <h3 className="text-lg font-thin">{event.location}</h3> */}
                 </div>
               </div>
             ))}
