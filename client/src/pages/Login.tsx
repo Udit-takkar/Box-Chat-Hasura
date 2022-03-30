@@ -30,7 +30,8 @@ const Login: React.FC = () => {
           </button>
           <button
             onClick={() =>
-              (window.location.href = "https://github.com/Udit-takkar/Box-Chat")
+              (window.location.href =
+                "https://github.com/Udit-takkar/Box-Chat-Hasura")
             }
             className="login-btn text-2xl bg-transparent hover:bg-btn text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded ml-10 mt-5  "
           >

@@ -12,7 +12,7 @@ import ProfilePhoto from "../components/Profile/ProfilePhoto";
 import Layout from "../components/Layout";
 import { useAuth } from "../contexts/Auth";
 import { useMoralis } from "react-moralis";
-import { EditProfileValidation } from "../validationSchema";
+import { EditProfileValidation } from "../utils/validationSchema";
 import { useMoralisDapp } from "../contexts/MoralisDappProvider";
 import { useNFTBalances } from "react-moralis";
 import { Modal } from "../components/Modal";

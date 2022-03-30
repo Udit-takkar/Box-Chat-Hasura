@@ -1,6 +1,6 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { AddRoomValidation } from "../../validationSchema";
+import { AddRoomValidation } from "../../utils/validationSchema";
 import { useCreateRoomMutation } from "../../graphql/autogen/types";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
