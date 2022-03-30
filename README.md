@@ -1,5 +1,4 @@
 <br />
-<p align="center"><b>Note: You would have to enable third party cookies for box-chat.vercel.app</b></p>
 <p align="center">
   <a >
     <img src="./client/src/assets/logo.png" alt="BugVilla Logo" width="150" height="150">
