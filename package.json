@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd client && npm start"
+    "start": "cd client && npm start",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "lint": "eslint --ignore-path .gitignore \"./packages/**/*.{ts,tsx,js,jsx}\"",
+    "format": "prettier --write \"{*,**/*}.{js,jsx,json,yml,yaml,md}\""
   },
   "keywords": [],
   "author": "",
@@ -16,7 +20,18 @@
     "@typescript-eslint/parser": "^4.31.0",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.25.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.7",
     "prettier": "2.3.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {}
 }
