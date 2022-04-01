@@ -50,7 +50,7 @@ function Profile() {
   });
 
   const [updateUser] = useUpdateUserMutation({
-    refetchQueries: [{ query: GET_USER_BY_ID }, { query: GET_USER_PHOTO }],
+    refetchQueries: [GET_USER_BY_ID, "getUser"],
   });
 
   const handleLogout = () => {
@@ -118,6 +118,14 @@ function Profile() {
   const handleConnect = async () => {
     await authenticate();
   };
+
+  const getText = () => {
+    if (chainId !== "0x13881") {
+      return "Connect to Mumbai Testnet";
+    } else if (isAuthenticated && walletAddress) {
+      return getAccountString(walletAddress);
+    }
+  };
   return (
     <Layout title="Box-Chat Profile">
       <div className="grid w-full place-items-center bg-bkg ">
@@ -133,13 +141,7 @@ function Profile() {
               <ProfilePhoto user={data?.User_by_pk} />
               <div className="flex items-center justify-center mb-5">
                 <p className="text-navFont text-white font-montserrat text-md font-bold mx-3 tracking-wide  bg-gray-600 p-2 rounded-lg">
-                  {isAuthenticating ? (
-                    <Loader />
-                  ) : (
-                    isAuthenticated &&
-                    walletAddress &&
-                    getAccountString(walletAddress)
-                  )}
+                  {isAuthenticating ? <Loader /> : getText()}
                   {!isAuthenticated && !isAuthenticating && (
                     <button
                       className="cursor-pointer text-white"
@@ -264,7 +266,7 @@ function Profile() {
                       </div>
                       {isAuthenticated && data?.User_by_pk && (
                         <div className="flex items-center justify-between w-full p-2 px-4">
-                          {data.User_by_pk.nft_image_url ? (
+                          {data?.User_by_pk?.nft_image_url ? (
                             <button
                               type="button"
                               className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"

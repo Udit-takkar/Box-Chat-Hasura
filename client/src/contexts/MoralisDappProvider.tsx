@@ -17,26 +17,21 @@ function MoralisDappProvider({ children }: any) {
   const [chainId, setChainId] = useState<string | null>(null);
 
   useEffect(() => {
-    Moralis.onChainChanged(function (chain) {
-      setChainId(chain);
+    // Moralis.onChainChanged(function (chain: string) {
+    //   setChainId(chain);
+    // });
+    window.ethereum.on("accountsChanged", function (accounts: string[]) {
+      setWalletAddress(accounts[0]);
     });
-
-    const unsubscribe = Moralis.onAccountChanged((account: string | null) => {
-      console.log("changed", account);
-      setWalletAddress(account);
-    });
-
-    return () => {
-      unsubscribe();
-    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  console.log(web3);
-  useEffect(() => setChainId(web3?._network.chainId.toString() || null));
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => setChainId(web3?.givenProvider?.chainId));
   useEffect(
     () =>
       setWalletAddress(
-        // web3?.givenProvider?.selectedAddress || user?.get("ethAddress")
-        user?.get("ethAddress")
+        web3?.givenProvider?.selectedAddress || user?.get("ethAddress")
       ),
     [web3, user]
   );

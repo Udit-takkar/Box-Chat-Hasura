@@ -73,7 +73,9 @@ function Rooms() {
           </div>
         </div>
         <div>
-          <h1 className="text-xl font-bold mt-5 ml-2.5 mb-4">Audio Rooms</h1>
+          <h1 className="text-xl font-bold mt-5 ml-2.5 mb-4">
+            Audio Rooms (Coming Soon...)
+          </h1>
           <div className="flex flex-wrap mt-2">
             {sampleEvents.map(event => (
               <div
