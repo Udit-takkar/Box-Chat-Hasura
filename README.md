@@ -1,4 +1,5 @@
 <br />
+<p align="center">(You might have to accept all third party cookies in the browser)</p>
 <p align="center">
   <a >
     <img src="./client/src/assets/logo.png" alt="BugVilla Logo" width="150" height="150">
@@ -7,15 +8,15 @@
   <h3 align="center">Come Explore Realtime Chat Rooms</h3>
 
   <p align="center">
-  <img src="https://img.shields.io/github/stars/Udit-takkar/Box-Chat" alt="stars" />
+  <img src="https://img.shields.io/github/stars/Udit-takkar/Box-Chat-Hasura" alt="stars" />
    <img src="https://img.shields.io/badge/author-Udit-takkar" alt="author Udit"/>
    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/UditCodes?style=social" />  
   </p>
     <p align="center">
     ·
-    <a href="https://github.com/Udit-takkar/Box-Chat/issues">Report Bug</a>
+    <a href="https://github.com/Udit-takkar/Box-Chat-Hasura/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Udit-takkar/Box-Chat/issues">Request Feature</a>
+    <a href="https://github.com/Udit-takkar/Box-Chat-Hasura/issues">Request Feature</a>
   </p>
   
   <p align="center">Realtime Group Messaging Web Application</p>
