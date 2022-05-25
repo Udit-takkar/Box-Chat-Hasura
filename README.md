@@ -28,7 +28,7 @@
 
 ## ✨ Features
 
-- Connect meta mask wallet to add hexagon-shaped NFT profile pictures. (currently loads NFTs from mumbai testnet)
+- Connect meta mask wallet to add hexagon-shaped NFT profile pictures. (currently loads NFTs from mumbai testnet)( Coming Soon ...)
 - Authentication with Auth0
 - Infinte Lazy Loading of Messages in Rooms using Intersection Observer
 - Create your own Chat Rooms
